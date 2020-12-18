@@ -15,7 +15,6 @@ class Ship():
         #根据screen的rect，决定自己的位置，默认为屏幕最下方正中间
         self.rect = self.image.get_rect()
         self.screen_rect = self.screen.get_rect()
-        print(self.screen_rect)
         self.f_center = float(self.screen_rect.centerx) #x中心坐标位置,用浮点数存储，飞船移动位置提高精度
         self.rect.bottom = self.screen_rect.bottom #y坐标
         self.move_right = False
